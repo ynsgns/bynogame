@@ -1,0 +1,102 @@
+$break-small: 320px;
+$break-md: 720px;
+$break-large: 1024px;
+$header-color:#234321;
+$gray: #787878;
+
+.container{ 
+  width: $break-large;
+  height: 100%;
+  margin: 0 auto;
+  @media screen and (max-width: $break-large) {
+    width: 100%;  
+  }
+  @media screen and (min-width: $break-large) {
+  }
+}
+.footer{
+  width: 100%;
+  border-top: 1px solid;
+  text-align: center;
+  min-height: 60px;
+  @media screen and (max-width: $break-large) {
+    width: 100%;  
+  }
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+.logo{
+ float: left;   
+}
+.title{
+  float: right;
+}
+.floatClear{
+    clear: both;
+}
+.main{
+  width: 100%;
+}
+a{
+  text-decoration: none;}
+.card{
+  width: 250px;
+  height: 160px;
+  @media screen and (max-width: $break-large) {
+    width: 32.5%;  
+  }
+  @media screen and (max-width: $break-md) {
+    width: 49%;  
+  }
+  @media screen and (max-width: 599px) {
+    width: 48.5%;  
+  }
+  @media screen and (max-width: 399px) {
+    width: 99%;  
+  }
+  float: left;
+  border: 1px solid rgba($color: $gray, $alpha: 0.3);
+  margin: 2px;
+  border-radius: 1px;
+  &:hover {
+    background-color: rgba($color: #5A9DD2, $alpha: 0.5);
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  .img{
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      
+    }
+  }
+}
+
+
+.header { 
+  width: 1024px;
+  min-height: 80px;
+  border-bottom:$gray 1px solid ;
+  box-shadow: 10px;
+  @media screen and (max-width: $break-large) {
+    width: 100%;  
+  }
+  @media screen and (max-width: $break-small) {
+    width: 100px;
+    
+  }
+  @media screen and (min-width: $break-large) {
+    
+  }
+}
+ 
